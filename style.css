@@ -1,0 +1,13 @@
+p {
+	line-height: 1.5;
+
+   }
+
+
+.external-style {
+		border: 2px solid green;
+    
+		padding: 10px;
+		background-color:green;
+
+		}
