@@ -1,0 +1,28 @@
+<html>
+<body><br>
+<center> <div class="content" id="contentBox">
+        Click Here! 
+</div></center>
+<br><br>
+<center> <div id="hoverContent">
+        <img src="C:\Users\Admin\Downloads/tea.jpg" width="400px" height="300px">
+        <p>Tea is the elixir of life</p>
+    </div></center>
+
+    <script>
+        
+        const contentBox = document.getElementById('contentBox');
+        const hoverContent = document.getElementById('hoverContent');
+
+        
+        contentBox.addEventListener('mouseover', function() {
+            hoverContent.style.display = 'block'; 
+        });
+
+        contentBox.addEventListener('mouseout', function() {
+            hoverContent.style.display = 'none'; 
+        });
+    </script>
+
+</body>
+</html>

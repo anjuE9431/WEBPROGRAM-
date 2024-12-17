@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>Select any Element</h2>
+    <p>The event will be fired after the selection and the function associated with onchange will execute.</p>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="" disabled selected hidden>Choose a Technology</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+        <option value="PHP">PHP</option>
+    </select>
+
+
+    <p id="show"></p>
+
+    <script>
+        function myFunction() {
+            var value = document.getElementById("mySelect").value;
+            var x = document.getElementById("show")
+            x.innerHTML = "Selected Value: " + value;
+        }
+    </script>
+
+</body>
+
+</html>
